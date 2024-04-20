@@ -39,10 +39,20 @@ wp-config.php
 #
 # Note: If you wish to whitelist plugins,
 # uncomment the next line
-#/wp-content/plugins
+# /wp-content/plugins
 
 # All themes
 #
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 #/wp-content/themes
+
+# Ignore all files and directories in the themes folder
+wp-content/themes/*
+# Except your own theme
+!wp-content/themes/your-theme-name/
+
+# Ignore all files and directories in the themes folder
+wp-content/themes/*
+# Except your own plugin
+!wp-content/plugins/your-plugin-name/
